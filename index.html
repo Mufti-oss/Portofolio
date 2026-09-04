@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufti Rayhan Nurfadillah — Portfolio | IT Student & Developer</title>
+    <meta name="description" content="Portfolio Website of Mufti Rayhan Nurfadillah, an Information Technology Student at Universitas Gunadarma specializing in Front-End, Back-End Development, UI/UX Design, and Database Management.">
+    <meta name="keywords" content="Mufti Rayhan, Portfolio, Web Developer, IT Student, UI/UX Designer, Universitas Gunadarma">
+    <meta name="author" content="Mufti Rayhan Nurfadillah">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mufti Rayhan Nurfadillah — Portfolio">
+    <meta property="og:description" content="Information Technology Student at Universitas Gunadarma. Front-End, Back-End Developer & UI/UX Designer.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================================================================
+         STICKY NAVBAR WITH GLASSMORPHISM
+         ==================================================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Mufti <span class="accent-text">Rayhan</span></a>
+
+            <!-- Desktop Menu -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Hire Me Capsule Button -->
+            <div class="nav-cta">
+                <a href="#contact" class="btn-hire">
+                    Hire Me <span class="arrow-wrapper"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <!-- Hamburger Menu Toggle (Mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+            <li>
+                <a href="#contact" class="btn-hire btn-mobile-hire">
+                    Hire Me <span class="arrow-wrapper"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ====================================================================
+         MAIN CONTENT
+         ==================================================================== -->
+    <main class="main-content">
+
+        <!-- ================================================================
+             HERO SECTION
+             ================================================================ -->
+        <section id="home" class="hero-section">
+            <div class="hero-container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-grid">
+                    <!-- Left Column -->
+                    <div class="hero-content">
+                        <span class="hero-greeting" data-aos="fade-up" data-aos-delay="100">Hello, I'm</span>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                            Mufti Rayhan<br>
+                            <span class="accent-title">Nurfadillah</span>
+                        </h1>
+                        <!-- Typing Text Wrapper -->
+                        <div class="typing-container" data-aos="fade-up" data-aos-delay="300">
+                            <span class="typing-prefix">I am a&nbsp;</span>
+                            <span id="typed"></span>
+                        </div>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                            Saya adalah mahasiswa Universitas Gunadarma yang telah mempelajari bidang Information Technology selama kurang lebih dua tahun. Saya memiliki pengalaman dalam pengembangan website, perancangan antarmuka pengguna, pengelolaan database, pengembangan backend dan frontend, serta terus mengembangkan kemampuan untuk membangun solusi digital yang modern, responsif, dan efisien.
+                        </p>
+                        <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="hero-visual">
+                        <!-- Image Container with Overlay -->
+                        <div class="avatar-container">
+                            <div class="avatar-glow"></div>
+                            <img src="assets/profile.jpeg" alt="Mufti Rayhan Nurfadillah" class="avatar-img" loading="eager">
+                            <div class="avatar-overlay"></div>
+                        </div>
+
+                        <!-- Floating Glassmorphism Stats Cards -->
+                        <div class="stats-grid">
+                            <div class="stat-card glass" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number" data-target="5">0</h3>
+                                    <p class="stat-label">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number" data-target="3">0</h3>
+                                    <p class="stat-label">Learning Experience</p>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" data-aos="zoom-in" data-aos-delay="600">
+                                <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number" data-target="20">0</h3>
+                                    <p class="stat-label">Technologies Learned</p>
+                                </div>
+                            </div>
+                            <div class="stat-card glass" data-aos="zoom-in" data-aos-delay="800">
+                                <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                <div class="stat-info">
+                                    <h3 class="stat-number" data-target="100">0</h3>
+                                    <p class="stat-label">Portfolio Ready</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             ABOUT SECTION
+             ================================================================ -->
+        <section id="about" class="about-section section-padding">
+            <div class="section-container">
+                <div class="about-grid">
+                    <!-- Left Column -->
+                    <div class="about-header" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="section-subtitle">About Me</span>
+                        <h2 class="section-title">Passionate About Building Modern Digital Solutions</h2>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                        <p class="about-text">
+                            Halo, saya Mufti Rayhan Nurfadillah, mahasiswa Universitas Gunadarma yang memiliki ketertarikan besar pada dunia Information Technology. Selama dua tahun terakhir saya aktif mempelajari berbagai bidang seperti UI/UX Design, Front-End Development, Back-End Development, Database Management, serta dasar-dasar Cloud Computing dan Networking. Saya juga pernah dipercaya menjadi Asisten Praktikum, membantu mahasiswa lain memahami materi Database serta bahasa pemrograman seperti Java dan VB.NET. Saya senang mempelajari teknologi baru, menyelesaikan permasalahan melalui pemrograman, dan membangun aplikasi yang modern, aman, serta mudah digunakan.
+                        </p>
+                        <a href="#contact" class="btn btn-primary btn-glow">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SKILLS SECTION
+             ================================================================ -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-subtitle">My Expertise</span>
+                    <h2 class="section-title text-center">Tech Stack & Skills</h2>
+                </div>
+
+                <div class="skills-grid" data-aos="fade-up" data-aos-duration="1000">
+                    <!-- Frontend -->
+                    <div class="skills-category-card glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-laptop-code category-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="skill-badge"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+                            <span class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills-category-card glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-server category-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="skill-badge"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cloud-arrow-down"></i> REST API</span>
+                            <span class="skill-badge"><i class="fa-brands fa-golang"></i> Golang</span>
+                            <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skills-category-card glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-database category-icon"></i>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Networking & Systems -->
+                    <div class="skills-category-card glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-network-wired category-icon"></i>
+                            <h3>Networking & Systems</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-wifi"></i> Networking Fundamentals</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills-category-card glass">
+                        <div class="category-header">
+                            <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                            <h3>Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                            <span class="skill-badge"><i class="fa-solid fa-server"></i> XAMPP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             PROJECTS SECTION
+             ================================================================ -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Cafe Management System -->
+                    <div class="project-card glass" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-visual-fallback p-grad-1">
+                            <img src="assets/cafe-management-preview.svg" alt="Cafe management system dashboard preview" class="project-preview-img" loading="lazy">
+                            <div class="project-overlay-glow"></div>
+                            <div class="project-badge">Cafe System</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Cafe Management System</h3>
+                            <p class="project-desc">
+                                Sistem POS cafe untuk mengelola pesanan, produk, pembayaran, dashboard penjualan, dan transaksi kasir secara efisien.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: School Profile Website -->
+                    <div class="project-card glass" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-visual-fallback p-grad-2">
+                            <img src="assets/school-profile-preview.svg" alt="School profile website preview" class="project-preview-img" loading="lazy">
+                            <div class="project-overlay-glow"></div>
+                            <div class="project-badge">School Profile</div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">School Profile Website</h3>
+                            <p class="project-desc">
+                                Website profil sekolah modern dengan landing page informatif, visual edukasi yang menarik, navigasi rapi, dan layout responsif.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- ================================================================
+             EXPERIENCE SECTION (Vertical Timeline)
+             ================================================================ -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="section-container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section-subtitle">Roadmap</span>
+                    <h2 class="section-title">My Journey</h2>
+                </div>
+
+                <!-- Vertical Timeline -->
+                <div class="timeline" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="timeline-line"></div>
+
+                    <!-- Timeline Item 1 — 2026: IT Student -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content glass">
+                            <h3>Information Technology Student</h3>
+                            <h4 class="timeline-org">Universitas Gunadarma</h4>
+                            <p>Melanjutkan studi formal dan memperdalam keahlian di bidang rekayasa perangkat lunak, sistem basis data terdistribusi, serta integrasi teknologi modern dalam industri digital.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 — 2026: Asisten Praktikum -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass">
+                            <h3>Asisten Praktikum</h3>
+                            <h4 class="timeline-org">Universitas Gunadarma</h4>
+                            <p>Membantu mengajar dan mendampingi praktikum Database serta Pemrograman (Java dan VB.NET) di Universitas Gunadarma, sekaligus memperdalam materi Networking.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 — 2025: Portfolio & Project Development -->
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass">
+                            <h3>Portfolio & Project Development</h3>
+                            <h4 class="timeline-org">Self-Guided Learning</h4>
+                            <p>Membangun berbagai project website dan aplikasi untuk pembelajaran serta pengembangan portofolio, termasuk eksplorasi backend menggunakan Golang.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 — 2024: The Beginning -->
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass">
+                            <h3>The Beginning</h3>
+                            <h4 class="timeline-org">Foundational Skills</h4>
+                            <p>Mulai mempelajari Frontend, Backend, Database, dan UI/UX Design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             CONTACT SECTION
+             ================================================================ -->
+        <section id="contact" class="contact-section">
+            <div class="contact-card-container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="contact-grid">
+                    <!-- Left: Info & Details -->
+                    <div class="contact-info-panel">
+                        <span class="contact-subtitle">Get In Touch</span>
+                        <h2 class="contact-title">Let's Build Something Together</h2>
+                        <p class="contact-desc">
+                            Saya selalu terbuka untuk berdiskusi tentang project baru, ide kreatif, atau peluang kerja sama di bidang IT. Hubungi saya melalui salah satu saluran di bawah ini!
+                        </p>
+
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <a href="mailto:rayhanmufti33x@gmail.com" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">rayhanmufti33x@gmail.com</span>
+                                </div>
+                            </a>
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/6281957211120" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">WhatsApp</span>
+                                    <span class="method-value">+62 819-5721-1120</span>
+                                </div>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/Mufti-oss" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+                                <div class="method-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="method-details">
+                                    <span class="method-label">GitHub</span>
+                                    <span class="method-value">github.com/Mufti-oss</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-panel">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="Masukkan email Anda" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Pesan</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-submit" id="submitBtn">
+                                Send Message <span class="btn-submit-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                        <div id="formFeedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">Mufti <span class="accent-text">Rayhan</span></a>
+                <p class="footer-tagline">Mufti Rayhan Nurfadillah</p>
+                <p class="footer-sub">Information Technology Student</p>
+                <p class="footer-institution">Universitas Gunadarma</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">Copyright &copy; 2026 Mufti Rayhan Nurfadillah. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Typed.js Library -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- AOS (Animate On Scroll) JS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

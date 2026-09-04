@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">School profile website preview</title>
+  <desc id="desc">A modern school profile landing page with EduCendekia branding, hero text, statistics, and a bright campus illustration.</desc>
+  <defs>
+    <linearGradient id="pageBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9fbff"/>
+      <stop offset="1" stop-color="#eef4ff"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" x2="1">
+      <stop offset="0" stop-color="#5f5af6"/>
+      <stop offset="1" stop-color="#4a43df"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7bd6f2"/>
+      <stop offset="1" stop-color="#def7e5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#203456" flood-opacity=".16"/>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#dbe5f5"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#pageBg)"/>
+  <rect width="960" height="600" fill="url(#dots)" opacity=".55"/>
+
+  <g transform="translate(96 52)">
+    <rect width="34" height="34" rx="10" fill="url(#purple)" filter="url(#shadow)"/>
+    <path d="M10 16l7-4 7 4-7 4-7-4Zm2 4v5c3 3 8 3 10 0v-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="48" y="24" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="800" fill="#121a31">Edu<tspan fill="#4f46e5">Cendekia</tspan></text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#3b4558" opacity=".95">
+    <text x="380" y="75">Beranda</text>
+    <text x="455" y="75">Keunggulan</text>
+    <text x="548" y="75">Kegiatan</text>
+    <text x="632" y="75">Kontak</text>
+  </g>
+  <g transform="translate(758 48)">
+    <rect width="112" height="42" rx="11" fill="url(#purple)" filter="url(#shadow)"/>
+    <text x="21" y="27" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#fff">Daftar</text>
+    <path d="M83 21h14m-5-5 5 5-5 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(96 150)" font-family="Inter, Arial, sans-serif">
+    <rect width="224" height="28" rx="14" fill="#eef2ff" stroke="#d8ddff"/>
+    <circle cx="18" cy="14" r="6" fill="#7775ff"/>
+    <text x="30" y="19" font-size="13" font-weight="800" letter-spacing=".4" fill="#4f46e5">PENERIMAAN SISWA BARU</text>
+    <text x="0" y="96" font-size="45" font-weight="900" fill="#111827">Membentuk Generasi</text>
+    <text x="0" y="143" font-size="45" font-weight="900" fill="#5146e8">Unggul Berkarakter</text>
+    <text x="0" y="190" font-size="45" font-weight="900" fill="#111827">&amp; Berprestasi</text>
+    <text x="0" y="236" font-size="18" font-weight="500" fill="#5f6b80">Lingkungan belajar inspiratif, inovatif, dan</text>
+    <text x="0" y="262" font-size="18" font-weight="500" fill="#5f6b80">berstandar internasional untuk masa depan.</text>
+    <rect y="305" width="154" height="50" rx="14" fill="url(#purple)" filter="url(#shadow)"/>
+    <text x="28" y="337" font-size="15" font-weight="800" fill="#fff">Jelajahi</text>
+    <rect x="176" y="305" width="146" height="50" rx="14" fill="#fff" stroke="#d9e1ee"/>
+    <text x="207" y="337" font-size="15" font-weight="800" fill="#263244">Kegiatan</text>
+    <line x1="0" x2="330" y1="398" y2="398" stroke="#dfe6f3"/>
+    <text x="0" y="457" font-size="29" font-weight="900" fill="#111827">98%</text>
+    <text x="0" y="481" font-size="12" font-weight="800" fill="#748198">KELULUSAN PTN</text>
+    <text x="126" y="457" font-size="29" font-weight="900" fill="#111827">50+</text>
+    <text x="126" y="481" font-size="12" font-weight="800" fill="#748198">PRESTASI NASIONAL</text>
+  </g>
+
+  <g transform="translate(550 154)">
+    <rect x="-26" y="15" width="78" height="78" rx="18" fill="#dce3ff" transform="rotate(13 13 54)"/>
+    <circle cx="286" cy="327" r="58" fill="#b8f0d1"/>
+    <rect x="32" y="42" width="294" height="294" rx="21" fill="#fff" filter="url(#shadow)"/>
+    <clipPath id="campusClip">
+      <rect x="39" y="49" width="280" height="280" rx="17"/>
+    </clipPath>
+    <g clip-path="url(#campusClip)">
+      <rect x="39" y="49" width="280" height="280" fill="url(#sky)"/>
+      <path d="M45 143c43-49 98-39 135 3 42-43 91-47 136-6v189H45z" fill="#d7f2de"/>
+      <path d="M39 240c61-24 119-25 178 0 42 17 74 16 102-2v91H39z" fill="#76c863"/>
+      <path d="M92 236h161v58H92z" fill="#334ba4"/>
+      <path d="M109 190h123v105H109z" fill="#4fb7c7"/>
+      <path d="M127 205h26v28h-26zm38 0h26v28h-26zm38 0h21v28h-21z" fill="#b8edf2"/>
+      <path d="M80 212h58v83H80z" fill="#273c8d"/>
+      <path d="M229 179h55v116h-55z" fill="#6bd0db"/>
+      <path d="M237 193h15v24h-15zm21 0h15v24h-15zm-21 32h15v24h-15zm21 0h15v24h-15z" fill="#d9fbff"/>
+      <path d="M160 117h31v178h-31z" fill="#53bdd0"/>
+      <path d="M168 129h15v15h-15zm0 22h15v15h-15zm0 22h15v15h-15z" fill="#f9ffff"/>
+      <circle cx="176" cy="108" r="18" fill="#e8f9f9"/>
+      <path d="M176 96v12l9 6" fill="none" stroke="#44506b" stroke-width="2" stroke-linecap="round"/>
+      <path d="M39 308c60-51 149-51 280 0v21H39z" fill="#d7c2a6"/>
+      <g fill="#1f8f64">
+        <circle cx="63" cy="87" r="27"/><circle cx="87" cy="69" r="24"/><circle cx="299" cy="78" r="31"/><circle cx="274" cy="66" r="22"/>
+        <circle cx="58" cy="274" r="24"/><circle cx="294" cy="276" r="23"/>
+      </g>
+      <g stroke="#20546a" stroke-width="4" stroke-linecap="round">
+        <path d="M77 79 45 141"/><path d="M287 87 319 143"/>
+      </g>
+      <g fill="#4f46e5">
+        <circle cx="134" cy="282" r="4"/><rect x="131" y="286" width="6" height="15" rx="3"/>
+        <circle cx="207" cy="283" r="4"/><rect x="204" y="287" width="6" height="15" rx="3"/>
+        <circle cx="257" cy="267" r="4"/><rect x="254" y="271" width="6" height="15" rx="3"/>
+      </g>
+    </g>
+    <rect x="32" y="42" width="294" height="294" rx="21" fill="none" stroke="#fff" stroke-width="4"/>
+    <g transform="translate(8 265)">
+      <rect width="144" height="62" rx="13" fill="#ffffff" opacity=".82" filter="url(#shadow)"/>
+      <circle cx="30" cy="31" r="15" fill="#11b981"/>
+      <path d="m23 31 5 5 10-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="54" y="27" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800" fill="#223047">Terakreditasi</text>
+      <text x="54" y="47" font-family="Inter, Arial, sans-serif" font-size="12" fill="#657285">Sekolah Nasional</text>
+    </g>
+  </g>
+</svg>

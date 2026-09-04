@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Cafe management system preview</title>
+  <desc id="desc">A warm cafe point of sale dashboard preview with sidebar navigation, summary cards, chart, and popular products.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdfa"/>
+      <stop offset="1" stop-color="#f8f0e9"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#a26d46"/>
+      <stop offset="1" stop-color="#7c5135"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#6f4a31" flood-opacity=".13"/>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#d9b08c" opacity=".65"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <rect width="960" height="600" fill="url(#dots)" opacity=".28"/>
+
+  <rect width="170" height="600" fill="#fffaf6"/>
+  <line x1="170" y1="0" x2="170" y2="600" stroke="#eadfd5"/>
+  <g transform="translate(24 28)">
+    <rect width="32" height="32" rx="9" fill="url(#coffee)"/>
+    <path d="M10 15h13v7a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6v-7Zm13 2h2a4 4 0 0 1 0 8h-2M13 8c2 2-2 3 0 5m5-5c2 2-2 3 0 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="42" y="13" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#83583b">Kopi Nusantara</text>
+    <text x="42" y="30" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#83583b">Cafe</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700" fill="#888" font-size="13">
+    <text x="24" y="105" letter-spacing="2">MENU UTAMA</text>
+    <rect x="15" y="126" width="140" height="34" rx="8" fill="#f1ece8"/>
+    <circle cx="35" cy="143" r="8" fill="#a26d46"/>
+    <text x="53" y="148" fill="#8b5c3e">Dashboard</text>
+    <text x="53" y="186">Kasir / POS</text>
+    <text x="53" y="224">Scan Barcode</text>
+    <text x="24" y="276" letter-spacing="2">MANAJEMEN</text>
+    <text x="53" y="312">Pesanan</text>
+    <text x="53" y="348">Produk</text>
+    <text x="53" y="384">Meja</text>
+    <text x="53" y="420">Pembayaran</text>
+  </g>
+
+  <g transform="translate(170 0)">
+    <rect width="790" height="52" fill="#ffffff"/>
+    <line y1="52" x2="790" y2="52" stroke="#eadfd5"/>
+    <text x="25" y="35" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="900" fill="#2e2e2e">Dashboard</text>
+    <circle cx="690" cy="26" r="16" fill="url(#coffee)"/>
+    <text x="682" y="32" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="900" fill="#fff">MU</text>
+    <text x="714" y="23" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800" fill="#2f2a27">Mufti Rayhan</text>
+    <text x="714" y="39" font-family="Inter, Arial, sans-serif" font-size="10" fill="#777">Kasir</text>
+
+    <g transform="translate(22 82)" font-family="Inter, Arial, sans-serif">
+      <text x="0" y="25" font-size="22" font-weight="900" fill="#171b22">Dashboard</text>
+      <text x="0" y="47" font-size="13" fill="#8b5c3e">Kopi Nusantara Cafe POS</text>
+
+      <g transform="translate(0 76)">
+        <rect width="170" height="92" rx="9" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <rect x="20" y="22" width="36" height="36" rx="9" fill="#ffe9e9"/>
+        <path d="M37 29v22m-7-16h14m-14 7h14" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+        <text x="20" y="70" font-size="24" font-weight="900" fill="#111827">0</text>
+        <text x="20" y="88" font-size="13" fill="#6b7280">Transaksi Hari Ini</text>
+      </g>
+      <g transform="translate(190 76)">
+        <rect width="190" height="92" rx="9" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <rect x="20" y="22" width="36" height="36" rx="9" fill="#e8fff5"/>
+        <path d="M30 45h18m-15-8 5-5 5 5 8-10" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="20" y="70" font-size="24" font-weight="900" fill="#111827">Rp 0</text>
+        <text x="20" y="88" font-size="13" fill="#6b7280">Pendapatan Hari Ini</text>
+      </g>
+      <g transform="translate(400 76)">
+        <rect width="170" height="92" rx="9" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <rect x="20" y="22" width="36" height="36" rx="9" fill="#eef4ff"/>
+        <path d="M30 38h18v14H30zM33 34h12" fill="#3b82f6"/>
+        <text x="20" y="70" font-size="24" font-weight="900" fill="#111827">24</text>
+        <text x="20" y="88" font-size="13" fill="#6b7280">Total Produk</text>
+      </g>
+      <g transform="translate(590 76)">
+        <rect width="170" height="92" rx="9" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <rect x="20" y="22" width="36" height="36" rx="9" fill="#f5eee9"/>
+        <path d="M38 31c8 8 1 21-7 14-5-5 0-13 7-14z" fill="#93613f"/>
+        <text x="20" y="70" font-size="24" font-weight="900" fill="#111827">2</text>
+        <text x="20" y="88" font-size="13" fill="#6b7280">Pesanan Aktif</text>
+      </g>
+
+      <g transform="translate(0 190)">
+        <rect width="520" height="245" rx="10" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <text x="24" y="34" font-size="16" font-weight="900" fill="#242424">Penjualan 7 Hari Terakhir</text>
+        <g transform="translate(66 66)" stroke="#eee6de" stroke-width="1">
+          <path d="M0 0h410M0 42h410M0 84h410M0 126h410M0 168h410"/>
+          <path d="M0 0v168M82 0v168M164 0v168M246 0v168M328 0v168M410 0v168"/>
+        </g>
+        <path d="M66 150h410" stroke="#9a6845" stroke-width="3"/>
+        <g fill="#9a6845">
+          <circle cx="66" cy="150" r="5"/><circle cx="148" cy="150" r="5"/><circle cx="230" cy="150" r="5"/><circle cx="312" cy="150" r="5"/><circle cx="394" cy="150" r="5"/><circle cx="476" cy="150" r="5"/>
+        </g>
+      </g>
+      <g transform="translate(540 190)">
+        <rect width="220" height="245" rx="10" fill="#fff" stroke="#eadfd5" filter="url(#shadow)"/>
+        <text x="24" y="34" font-size="16" font-weight="900" fill="#111827">Produk Terlaris</text>
+        <g font-size="13">
+          <text x="36" y="78" font-weight="900" fill="#111827">Americano</text>
+          <text x="172" y="78" font-weight="900" fill="#111827">22K</text>
+          <text x="36" y="100" fill="#8b5c3e">1 terjual</text>
+          <line x1="24" x2="196" y1="116" y2="116" stroke="#eadfd5"/>
+          <text x="36" y="146" font-weight="900" fill="#111827">Affogato</text>
+          <text x="172" y="146" font-weight="900" fill="#111827">30K</text>
+          <text x="36" y="168" fill="#8b5c3e">1 terjual</text>
+          <line x1="24" x2="196" y1="184" y2="184" stroke="#eadfd5"/>
+          <text x="36" y="214" font-weight="900" fill="#111827">Brownies</text>
+          <text x="172" y="214" font-weight="900" fill="#111827">25K</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
